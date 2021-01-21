@@ -175,7 +175,7 @@
                 </div>
             </div>
             <div class="form-group" align="center">
-                <button type="submit" class="btn btn-primary btn-lg">Buscar</button>
+                <button type="submit" class="btn btn-warning btn-lg">Buscar</button>
             </div>
         </form>
     </div>

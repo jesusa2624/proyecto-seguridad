@@ -208,9 +208,13 @@
                         </button>
                     </li>
 
-                    <li>
-                        <h1 class="page-title-main">SISTEMA DE SEGURIDAD DIRIN-PNP</h1>
-                    </li>
+                    <div class="row">
+                        <div class="hidden-lg-down">
+                            <li>
+                                <h1 class="page-title-main">SISTEMA DE SEGURIDAD DIRIN-PNP</h1>
+                            </li>
+                        </div>
+                    </div>
 
                 </ul>
             </div>
