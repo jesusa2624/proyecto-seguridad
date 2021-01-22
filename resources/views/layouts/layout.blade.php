@@ -17,6 +17,19 @@
         <link href="{{asset('libs/datatables/select.bootstrap4.css')}}" rel="stylesheet" type="text/css" />
         <!-- third party css end -->
 
+        <!-- Plugins css -->
+        <link href="{{asset('libs/bootstrap-tagsinput/bootstrap-tagsinput.css')}}" rel="stylesheet" />
+        <link href="{{asset('libs/switchery/switchery.min.css')}}" rel="stylesheet" type="text/css" />
+        
+        <link href="{{asset('libs/multiselect/multi-select.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset('libs/select2/select2.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset('libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css')}}" rel="stylesheet" />
+        <link href="{{asset('libs/switchery/switchery.min.css')}}" rel="stylesheet" />
+        <link href="{{asset('libs/bootstrap-timepicker/bootstrap-timepicker.min.css')}}" rel="stylesheet">
+        <link href="{{asset('libs/bootstrap-colorpicker/bootstrap-colorpicker.min.css')}}" rel="stylesheet">
+        <link href="{{asset('libs/bootstrap-datepicker/bootstrap-datepicker.css')}}" rel="stylesheet">
+        <link href="{{asset('libs/bootstrap-daterangepicker/daterangepicker.css')}}" rel="stylesheet">
+
         <!--Morris Chart-->
         <link rel="stylesheet" href="{{asset('libs/morris-js/morris.css')}}" />
 
@@ -333,18 +346,52 @@
             <!-- ============================================================== -->
             <!-- TERMINA EL CONTENIDO DE LA PAGINA -->
             <!-- ============================================================== -->
-
-
         </div>
+        <!-- Footer Start -->
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        2020 - 2021 &copy; Adminto theme by <a href="">DIRIN-PNP</a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-md-right footer-links d-none d-sm-block">
+                            <a href="javascript:void(0);">About Us</a>
+                            <a href="javascript:void(0);">Help</a>
+                            <a href="javascript:void(0);">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end Footer -->
 
 
         <!-- ============================================================== -->
         <!-- EMPIEZAN LOS SCRIPTS -->
         <!-- ============================================================== -->
 
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
 
         <!-- Vendor js -->
         <script src="{{asset('js/vendor.min.js')}}"></script>
+
+        <!-- Plugins Js -->
+        <script src="{{asset('libs/bootstrap-tagsinput/bootstrap-tagsinput.min.js')}}"></script>
+        <script src="{{asset('libs/switchery/switchery.min.js')}}"></script>
+        <script src="{{asset('libs/multiselect/jquery.multi-select.js')}}"></script>
+        <script src="{{asset('libs/jquery-quicksearch/jquery.quicksearch.min.js')}}"></script>
+        
+        <script src="{{asset('libs/select2/select2.min.js')}}"></script>
+        <script src="{{asset('libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js')}}"></script>
+        <script src="{{asset('libs/jquery-mask-plugin/jquery.mask.min.js')}}"></script>
+        <script src="{{asset('libs/moment/moment.js')}}"></script>
+        <script src="{{asset('libs/bootstrap-timepicker/bootstrap-timepicker.min.js')}}"></script>
+        <script src="{{asset('libs/bootstrap-colorpicker/bootstrap-colorpicker.min.js')}}"></script>
+        <script src="{{asset('libs/bootstrap-datepicker/bootstrap-datepicker.min.js')}}"></script>
+        <script src="{{asset('libs/bootstrap-daterangepicker/daterangepicker.js')}}"></script>
+        <script src="{{asset('libs/bootstrap-maxlength/bootstrap-maxlength.min.js')}}"></script>
 
         <!-- third party js -->
         <script src="{{asset('libs/datatables/jquery.dataTables.min.js')}}"></script>
@@ -361,6 +408,9 @@
         <script src="{{asset('libs/pdfmake/pdfmake.min.js')}}"></script>
         <script src="{{asset('libs/pdfmake/vfs_fonts.js')}}"></script>
         <!-- third party js ends -->
+
+        <!-- Init js-->
+        <script src="{{asset('js/pages/form-advanced.init.js')}}"></script>
 
         <!-- Datatables init -->
         <script src="{{asset('js/pages/datatables.init.js')}}"></script>

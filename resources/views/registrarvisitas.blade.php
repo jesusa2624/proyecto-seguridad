@@ -187,36 +187,50 @@
                             <div class=" col-12">
                                 <h4 class="header-title">PERTENENCIAS </h4>
                                 <div class="mt-3">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio1" name="customRadio"
-                                            class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadio1">LAPTOP</label>
+                                    <div class="checkbox checkbox-warning checkbox-circle">
+                                        <input id="checkbox-11" type="checkbox">
+                                        <label for="checkbox-11">
+                                            LAPTOP
+                                        </label>
                                     </div>
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio2" name="customRadio"
-                                            class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadio2">CELULAR</label>
+                                    <div class="checkbox checkbox-warning checkbox-circle">
+                                        <input id="checkbox-12" type="checkbox">
+                                        <label for="checkbox-12">
+                                            CELULAR
+                                        </label>
                                     </div>
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadio3">TABLET</label>
+                                    <div class="checkbox checkbox-warning checkbox-circle">
+                                        <input id="checkbox-13" type="checkbox">
+                                        <label for="checkbox-13">
+                                            TABLET
+                                        </label>
                                     </div>
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadio4">DISPOSITIVO DE ALMACENAJE</label>
+                                    <div class="checkbox checkbox-warning checkbox-circle">
+                                        <input id="checkbox-14" type="checkbox">
+                                        <label for="checkbox-14">
+                                            DISPOSITIVOS DE ALMACENAJE
+                                        </label>
                                     </div>
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio5" name="customRadio" class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadio5">EQUIPOS DE FILMACION</label>
+                                    <div class="checkbox checkbox-warning checkbox-circle">
+                                        <input id="checkbox-15" type="checkbox">
+                                        <label for="checkbox-15">
+                                            EQUIPOS DE FILMACION
+                                        </label>
                                     </div>
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio6" name="customRadio" class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadio6">ARMAMENTO</label>
+                                    <div class="checkbox checkbox-warning checkbox-circle">
+                                        <input id="checkbox-16" type="checkbox">
+                                        <label for="checkbox-16">
+                                            ARMAMENO
+                                        </label>
                                     </div>
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio7" name="customRadio" class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadio7">DRONE</label>
+                                    <div class="checkbox checkbox-warning checkbox-circle">
+                                        <input id="checkbox-17" type="checkbox">
+                                        <label for="checkbox-17">
+                                            DRONE
+                                        </label>
                                     </div>
+
+                                    {{-- DESCRIPCION DE LAS PERTENENCIAS --}}
                                     <br>
                                     <div class="form-group row">
                                         <label class="col-sm-2  col-form-label" for="example-textarea">DESCRIBA LAS PERTENENCIAS:</label>
@@ -224,40 +238,18 @@
                                             <textarea class="form-control" rows="5" id="example-textarea"></textarea>
                                         </div>
                                     </div>
-
-                                    <div class="form-group" align="center">
-                                        <button type="submit" class="btn btn-warning btn-lg">AGENDAR CITA</button>
-                                    </div>
                                 </div>
                             </div>
                         </div>
-
                     </div> <!-- end card-box -->
                 </div> <!-- end col -->
             </div>
             <!-- end row -->
+            <div class="form-group" align="center">
+                <button type="submit" class="btn btn-warning btn-lg">AGENDAR CITA</button>
+            </div>
         </div> <!-- container-fluid -->
 
     </div> <!-- content -->
-
-    <!-- Footer Start -->
-    <footer class="footer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6">
-                    2020 - 2021 &copy; Adminto theme by <a href="">DIRIN-PNP</a>
-                </div>
-                <div class="col-md-6">
-                    <div class="text-md-right footer-links d-none d-sm-block">
-                        <a href="javascript:void(0);">About Us</a>
-                        <a href="javascript:void(0);">Help</a>
-                        <a href="javascript:void(0);">Contact Us</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- end Footer -->
-
 </div>
 @endsection
