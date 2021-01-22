@@ -10,7 +10,7 @@
                 <div class=" col-sm-12 col-md-12 col-lg-9 col-xl-12">
                     <div class="card-box">
                         <h3 style="color:rgb(255, 196, 0)">REGISTRO DE VISITAS DIRIN-PNP</h3>
-                        
+
                         <div class="row">
                             <div class="col-12" >
                                 <div class="p-2">
@@ -23,7 +23,7 @@
                                                     <option value="2">EXTRANJEROS</option>
                                                     <option value="3">SIN SERVICIO RENIEC</option>
                                                 </select>
-                                            </div>                   
+                                            </div>
                                         </div>
 
                                         <div class="form-group row">
@@ -34,23 +34,23 @@
                                                 <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">
                                                     BUSCAR
                                                 </button>
-                                                
+
                                                 <!-- MODAL -->
                                                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                                                     aria-hidden="true">
                                                     <div class="modal-dialog" role="document">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
-                                                                <h5 class="modal-title"  id="exampleModalLabel">INGRESE EL NUMERO DE DNI:</h5>
+                                                                <h5 class="modal-title"  id="exampleModalLabel" style="color:rgb(255, 196, 0)">INGRESE EL NUMERO DE DNI:</h5>
                                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                     <span aria-hidden="true">&times;</span>
                                                                 </button>
                                                             </div>
                                                             {{-- CUERPO DEL MODAL --}}
                                                             <div class="modal-body">
-                                                                <div class="card border-primary mb-3" style="max-width: 18rem;">
+                                                                <div class="card border-primary mb-3" style="max-width: 30rem;">
                                                                     <input class="card-header">N° DE DNI</input>
-                                                                    <img src="{{asset('images/gallery/dni.png')}}" alt="" height="150" width="200" ">
+                                                                    <div align="center"><img src="{{asset('images/gallery/dni.png')}}" alt="" height="200" width="300"></div>
                                                                     <div class="card-body text-primary">
                                                                         <h6 class="card-title" style="color:red">RELLENAR EL CAMPO OBLIGATORIO</h6>
                                                                     </div>
@@ -75,20 +75,20 @@
                                                 <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal2">
                                                     BUSCAR
                                                 </button>
-                                        
+
                                                 <!-- MODAL -->
                                                 <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog" role="document">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
-                                                                <h5 class="modal-title" id="exampleModalLabel2">INGRESE EL NUMERO DE CIP:</h5>
+                                                                <h5 class="modal-title" id="exampleModalLabel2" style="color:rgb(255, 196, 0)">INGRESE EL NUMERO DE CIP:</h5>
                                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                     <span aria-hidden="true">&times;</span>
                                                                 </button>
                                                             </div>
                                                             {{-- CUERPO DEL MODAL --}}
                                                             <div class="modal-body">
-                                                                <div class="card border-primary mb-3" style="max-width: 18rem;">
+                                                                <div class="card border-primary mb-3" style="max-width: 30rem;">
                                                                     <input class="card-header">N° DE CIP</input>
                                                                     <div class="card-body text-primary">
                                                                         <h6 class="card-title" style="color:red">RELLENAR EL CAMPO OBLIGATORIO</h6>

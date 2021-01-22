@@ -10,6 +10,13 @@
         <!-- App favicon -->
         <link rel="shortcut icon" href="{{asset('images/favicon.ico')}}">
 
+        <!-- third party css -->
+        <link href="{{asset('libs/datatables/dataTables.bootstrap4.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset('libs/datatables/responsive.bootstrap4.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset('libs/datatables/buttons.bootstrap4.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset('libs/datatables/select.bootstrap4.css')}}" rel="stylesheet" type="text/css" />
+        <!-- third party css end -->
+
         <!--Morris Chart-->
         <link rel="stylesheet" href="{{asset('libs/morris-js/morris.css')}}" />
 
@@ -208,11 +215,11 @@
                         </button>
                     </li>
 
-                    <div class="row">
-                        <div class="hidden-lg-down">
-                            <li>
-                                <h1 class="page-title-main">SISTEMA DE SEGURIDAD DIRIN-PNP</h1>
-                            </li>
+                    <div class="container">
+                        <div class="row">
+                            <div class="d-sm-none d-lg-none d-xl-block">
+                                <h2 class="page-title-main">SISTEMA DE SEGURIDAD DIRIN-PNP</h2>
+                            </div>
                         </div>
                     </div>
 
@@ -338,6 +345,25 @@
 
         <!-- Vendor js -->
         <script src="{{asset('js/vendor.min.js')}}"></script>
+
+        <!-- third party js -->
+        <script src="{{asset('libs/datatables/jquery.dataTables.min.js')}}"></script>
+        <script src="{{asset('libs/datatables/dataTables.bootstrap4.js')}}"></script>
+        <script src="{{asset('libs/datatables/dataTables.responsive.min.js')}}"></script>
+        <script src="{{asset('libs/datatables/responsive.bootstrap4.min.js')}}"></script>
+        <script src="{{asset('libs/datatables/dataTables.buttons.min.js')}}"></script>
+        <script src="{{asset('libs/datatables/buttons.bootstrap4.min.js')}}"></script>
+        <script src="{{asset('libs/datatables/buttons.html5.min.js')}}"></script>
+        <script src="{{asset('libs/datatables/buttons.flash.min.js')}}"></script>
+        <script src="{{asset('libs/datatables/buttons.print.min.js')}}"></script>
+        <script src="{{asset('libs/datatables/dataTables.keyTable.min.js')}}"></script>
+        <script src="{{asset('libs/datatables/dataTables.select.min.js')}}"></script>
+        <script src="{{asset('libs/pdfmake/pdfmake.min.js')}}"></script>
+        <script src="{{asset('libs/pdfmake/vfs_fonts.js')}}"></script>
+        <!-- third party js ends -->
+
+        <!-- Datatables init -->
+        <script src="{{asset('js/pages/datatables.init.js')}}"></script>
 
         <!-- knob plugin -->
         <script src="{{asset('libs/jquery-knob/jquery.knob.min.js')}}"></script>
