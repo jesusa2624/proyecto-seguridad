@@ -21,3 +21,7 @@ Route::get('/bandejavisitas', 'VisitasController@store')->name('bandeja.visitas'
 Route::get('/registrarvisitas', 'VisitasController@create')->name('registrar.visitas');
 
 Route::get('/reportevisitas', 'VisitasController@edit')->name('reporte.visitas');
+
+//ADMINISTRADOR DE LOGIN
+
+Route::get('/login',  'AdminController@index')->name('reporte.visitas');

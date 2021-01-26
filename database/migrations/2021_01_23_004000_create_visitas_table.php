@@ -29,9 +29,6 @@ class CreateVisitasTable extends Migration
             $table->foreign('pases_id')->references('id')->on('pases');
             $table->unsignedBigInteger('autoriza_id');
             $table->foreign('autoriza_id')->references('id')->on('autoriza');
-
-
-
             $table->timestamps();
         });
     }
