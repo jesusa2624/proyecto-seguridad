@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9367c3d0-9066-4b37-b9fa-7efb0136e4be" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_23_004000_create_visitas_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_23_004000_create_visitas_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
     </list>
     <list id="53d2e920-b815-4f9b-bd8f-8e0a6a936dc2" name="Changes by Jimmy Niels" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -161,6 +162,8 @@
       <workItem from="1611419039742" duration="2703000" />
       <workItem from="1611427793429" duration="78000" />
       <workItem from="1611427895958" duration="1254000" />
+      <workItem from="1611692906475" duration="50000" />
+      <workItem from="1611692982720" duration="6927000" />
     </task>
     <servers />
   </component>
