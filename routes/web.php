@@ -14,9 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', 'VisitasController@index')->name('index.visitas');
+Route::get('/', 'EstadisticaController@index')->name('index.visitas');
 
-Route::get('/bandejavisitas', 'VisitasController@store')->name('bandeja.visitas');
+//MODULO BANDEJA VISITAS
+Route::get('/bandejavisitas', 'VisitasController@index')->name('bandeja.visitas');
+Route::get('/obtener-visitas', 'VisitasController@obtenerVisitas')->name('obtener-visitas');
 
 Route::get('/registrarvisitas', 'VisitasController@create')->name('registrar.visitas');
 

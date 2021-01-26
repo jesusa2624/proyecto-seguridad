@@ -14,7 +14,7 @@
                         <h3 style="color:rgb(255, 196, 0)">BANDEJA DE VISITAS DIRIN-PNP</h3>
 
 
-                        <table id="datatable-buttons" class="table table-striped table-bordered dt-responsive nowrap">
+                        <table id="bandeja_visitas" class="table table-striped table-bordered dt-responsive nowrap">
                             <thead>
                             <tr>
                                 <th>Nombre</th>
@@ -52,9 +52,52 @@
                 </div>
             </div>
             <!-- end row -->
-
         </div> <!-- container-fluid -->
     </div> <!-- content -->
 
 </div>
 @endsection
+@push('scripts_personalizados')
+    <script>
+
+
+    $(document).ready( function () {
+
+        window.axios.get('/obtener-visitas')
+            .then((respuesta)=>{
+                console.log(respuesta);
+                 let data = respuesta.data;
+                console.log(data);
+                obtenerVisitas(data)
+
+            })
+
+        function obtenerVisitas(visitas){
+            let tableVisitas = $("#bandeja_visitas");
+
+            tableVisitas.DataTable({
+                lengthChange: !1,
+                buttons: ["copy", "excel", "pdf"],
+                destroy : true,
+                data : visitas,
+                columns : [
+                    { data : 'pases_id'},
+                    { data : 'pases_id'},
+                    { data : 'pases_id'},
+                    { data : 'pases_id'},
+                    { data : 'pases_id'},
+                    { render : function (data, type, row, meta){
+                        return `<button class="btn btn-warning">Editar</button>
+                                <button class="btn btn-info">Ver</button>`
+                        }}
+                ]
+            });
+        }
+
+
+
+    });
+
+    </script>
+
+@endpush

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class VisitasController extends Controller
 {
@@ -13,7 +14,14 @@ class VisitasController extends Controller
      */
     public function index()
     {
-        return view('index');
+        return view('bandejavisitas');
+    }
+
+    public function obtenerVisitas(){
+        $visitas = DB::table('visitas')
+            ->with('relacionVisitante')
+            ->get();
+        return response()->json($visitas);
     }
 
     /**
@@ -34,7 +42,8 @@ class VisitasController extends Controller
      */
     public function store(Request $request)
     {
-        return view('bandejavisitas');
+        /**
+        ejecutas la logica para registrar*/
     }
 
     /**
@@ -54,9 +63,9 @@ class VisitasController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit( )
+    public function edit()
     {
-        return view('reportevisitas');
+        //return view('reportevisitas');
     }
 
     /**

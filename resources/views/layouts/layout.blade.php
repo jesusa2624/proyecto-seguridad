@@ -20,7 +20,7 @@
         <!-- Plugins css -->
         <link href="{{asset('libs/bootstrap-tagsinput/bootstrap-tagsinput.css')}}" rel="stylesheet" />
         <link href="{{asset('libs/switchery/switchery.min.css')}}" rel="stylesheet" type="text/css" />
-        
+
         <link href="{{asset('libs/multiselect/multi-select.css')}}" rel="stylesheet" type="text/css" />
         <link href="{{asset('libs/select2/select2.min.css')}}" rel="stylesheet" type="text/css" />
         <link href="{{asset('libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css')}}" rel="stylesheet" />
@@ -37,6 +37,7 @@
         <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
         <link href="{{asset('css/icons.min.css')}}" rel="stylesheet" type="text/css" />
         <link href="{{asset('css/app.min.css')}}" rel="stylesheet" type="text/css" />
+        @stack('styles_personalizados')
 
     </head>
 
@@ -374,6 +375,7 @@
         <!-- Right bar overlay-->
         <div class="rightbar-overlay"></div>
 
+
         <!-- Vendor js -->
         <script src="{{asset('js/vendor.min.js')}}"></script>
 
@@ -382,7 +384,7 @@
         <script src="{{asset('libs/switchery/switchery.min.js')}}"></script>
         <script src="{{asset('libs/multiselect/jquery.multi-select.js')}}"></script>
         <script src="{{asset('libs/jquery-quicksearch/jquery.quicksearch.min.js')}}"></script>
-        
+
         <script src="{{asset('libs/select2/select2.min.js')}}"></script>
         <script src="{{asset('libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js')}}"></script>
         <script src="{{asset('libs/jquery-mask-plugin/jquery.mask.min.js')}}"></script>
@@ -426,7 +428,9 @@
         <script src="{{asset('js/pages/dashboard.init.js')}}"></script>
 
         <!-- App js -->
-        <script src="{{asset('js/app.min.js')}}"></script>
+{{--        <script src="{{asset('js/app.min.js')}}"></script>--}}
+        <script src="{{ asset('js/app.js') }}"></script>
+        @stack('scripts_personalizados')
 
     </body>
 </html>
