@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Visita;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -18,9 +19,7 @@ class VisitasController extends Controller
     }
 
     public function obtenerVisitas(){
-        $visitas = DB::table('visitas')
-            ->with('relacionVisitante')
-            ->get();
+        $visitas = Visita::with('relacionVisitante')->get();
         return response()->json($visitas);
     }
 

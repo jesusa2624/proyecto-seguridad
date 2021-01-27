@@ -12,4 +12,5 @@ class Visita extends Model
     public function relacionVisitante(){
         return $this->hasOne('App\Visitante', 'id', 'visitantes_id');
     }
+
 }

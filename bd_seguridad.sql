@@ -113,7 +113,7 @@ CREATE TABLE `motivo_visitas` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -122,7 +122,7 @@ CREATE TABLE `motivo_visitas` (
 
 LOCK TABLES `motivo_visitas` WRITE;
 /*!40000 ALTER TABLE `motivo_visitas` DISABLE KEYS */;
-INSERT INTO `motivo_visitas` VALUES (1,'Visita a ciber',2,NULL,NULL);
+INSERT INTO `motivo_visitas` VALUES (1,'Visita a ciber',2,NULL,NULL),(2,'DIVBUS',1,NULL,NULL),(3,'DEPGEINF',3,NULL,NULL);
 /*!40000 ALTER TABLE `motivo_visitas` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -141,7 +141,7 @@ CREATE TABLE `pases` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -150,6 +150,7 @@ CREATE TABLE `pases` (
 
 LOCK TABLES `pases` WRITE;
 /*!40000 ALTER TABLE `pases` DISABLE KEYS */;
+INSERT INTO `pases` VALUES (1,'pase 1',1,1,NULL,NULL),(2,'pase 2',2,2,NULL,NULL),(3,'pase 3',3,3,NULL,NULL);
 /*!40000 ALTER TABLE `pases` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -188,13 +189,13 @@ DROP TABLE IF EXISTS `pisos`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `pisos` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `descripcion` bigint(20) NOT NULL,
+  `descripcion` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `sede` bigint(20) NOT NULL,
   `estado` bigint(20) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -203,6 +204,7 @@ CREATE TABLE `pisos` (
 
 LOCK TABLES `pisos` WRITE;
 /*!40000 ALTER TABLE `pisos` DISABLE KEYS */;
+INSERT INTO `pisos` VALUES (1,'PISO 1',1,1,NULL,NULL),(2,'PISO 2',2,2,NULL,NULL),(3,'PISO 3',3,3,NULL,NULL);
 /*!40000 ALTER TABLE `pisos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -220,7 +222,7 @@ CREATE TABLE `sedes` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -229,6 +231,7 @@ CREATE TABLE `sedes` (
 
 LOCK TABLES `sedes` WRITE;
 /*!40000 ALTER TABLE `sedes` DISABLE KEYS */;
+INSERT INTO `sedes` VALUES (1,'CENTRAL',1,NULL,NULL),(2,'NORTE',2,NULL,NULL),(3,'SUR',3,NULL,NULL);
 /*!40000 ALTER TABLE `sedes` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -278,7 +281,7 @@ CREATE TABLE `tipo_visitantes` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -287,6 +290,7 @@ CREATE TABLE `tipo_visitantes` (
 
 LOCK TABLES `tipo_visitantes` WRITE;
 /*!40000 ALTER TABLE `tipo_visitantes` DISABLE KEYS */;
+INSERT INTO `tipo_visitantes` VALUES (1,'efectivo pnp',1,NULL,NULL),(2,'Civil',2,NULL,NULL);
 /*!40000 ALTER TABLE `tipo_visitantes` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -338,7 +342,7 @@ CREATE TABLE `visitantes` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -347,6 +351,7 @@ CREATE TABLE `visitantes` (
 
 LOCK TABLES `visitantes` WRITE;
 /*!40000 ALTER TABLE `visitantes` DISABLE KEYS */;
+INSERT INTO `visitantes` VALUES (1,73266230,31997791,'S3','jesus','anglas','ayme',1,NULL,NULL),(2,45363689,31998984,'s3','Neder','Quispe','Salazar',2,NULL,NULL),(3,45987863,35669893,'s3','Pepito','Laurente','Comas',3,NULL,NULL);
 /*!40000 ALTER TABLE `visitantes` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -376,7 +381,7 @@ CREATE TABLE `visitas` (
   KEY `visitas_pisos_id_foreign` (`pisos_id`),
   KEY `visitas_pases_id_foreign` (`pases_id`),
   KEY `visitas_autoriza_id_foreign` (`autoriza_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -385,6 +390,7 @@ CREATE TABLE `visitas` (
 
 LOCK TABLES `visitas` WRITE;
 /*!40000 ALTER TABLE `visitas` DISABLE KEYS */;
+INSERT INTO `visitas` VALUES (1,1,1,1,1,1,1,1,NULL,NULL),(2,2,2,2,2,2,2,2,NULL,NULL),(3,3,1,1,3,3,3,2,NULL,NULL);
 /*!40000 ALTER TABLE `visitas` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -425,4 +431,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-01-26 14:58:50
+-- Dump completed on 2021-01-26 19:01:17

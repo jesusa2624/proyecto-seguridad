@@ -81,14 +81,16 @@
                 destroy : true,
                 data : visitas,
                 columns : [
-                    { data : 'pases_id'},
+                    { render : function (data, type, row, meta){
+                        return `${row.relacion_visitante.grado} PNP ${row.relacion_visitante.nombres} ${row.relacion_visitante.apellido_paterno} ${row.relacion_visitante.apellido_materno}`
+                        }},
                     { data : 'pases_id'},
                     { data : 'pases_id'},
                     { data : 'pases_id'},
                     { data : 'pases_id'},
                     { render : function (data, type, row, meta){
-                        return `<button class="btn btn-warning">Editar</button>
-                                <button class="btn btn-info">Ver</button>`
+                        return `<button class="btn btn-warning btn-block btn-sm">Editar</button>
+                                <button class="btn btn-info btn-block btn-sm">Ver</button>`
                         }}
                 ]
             });
