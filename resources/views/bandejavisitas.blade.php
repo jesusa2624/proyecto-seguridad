@@ -18,8 +18,8 @@
                             <thead>
                             <tr>
                                 <th>Nombre</th>
-                                <th>Empresa</th>
-                                <th>Oficina</th>
+                                <th>Tipo de visita</th>
+                                <th>Piso</th>
                                 <th>DNI</th>
                                 <th>Fecha</th>
                                 <th>Acciones</th>
